@@ -8,10 +8,7 @@ function App() {
   return (
     <div className="App">
       <BoxColor colorName={search} />
-      <SearchColorName
-        search={search}
-        setSearch={setSearch}
-      />
+      <SearchColorName search={search} setSearch={setSearch} />
     </div>
   );
 }

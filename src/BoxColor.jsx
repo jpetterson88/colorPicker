@@ -1,9 +1,9 @@
-import styles from './BoxColor.module.css';
+import styles from "./BoxColor.module.css";
 
 export default function BoxColor({ colorName }) {
   const bgColor = {
-    backgroundColor: colorName
-  }
+    backgroundColor: colorName,
+  };
 
   return (
     <div className={styles.div} style={bgColor}>
