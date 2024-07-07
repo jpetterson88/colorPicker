@@ -1,14 +1,18 @@
 import { useState } from "react";
+import BoxColor from "./BoxColor";
 import SearchColorName from "./SearchColorName";
 
 function App() {
   const [search, setSearch] = useState("");
 
   return (
-    <SearchColorName
-      search={search}
-      setSearch={setSearch}
-    />
+    <div className="App">
+      <BoxColor colorName={search} />
+      <SearchColorName
+        search={search}
+        setSearch={setSearch}
+      />
+    </div>
   );
 }
 
