@@ -4,11 +4,23 @@ import SearchColorName from "./SearchColorName";
 
 function App() {
   const [search, setSearch] = useState("");
+  const [hexValue, setHexValue] = useState("");
+  const [isDarkText, setIsDarkText] = useState(true)
 
   return (
     <div className="App">
-      <BoxColor colorName={search} />
-      <SearchColorName search={search} setSearch={setSearch} />
+      <BoxColor 
+        colorName={search} 
+        hexValue={hexValue}
+        isDarkText={isDarkText} 
+      />
+      <SearchColorName 
+        search={search} 
+        setSearch={setSearch} 
+        setHexValue={setHexValue}
+        isDarkText={isDarkText}
+        setIsDarkText={setIsDarkText}
+      />
     </div>
   );
 }
