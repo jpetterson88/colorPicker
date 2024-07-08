@@ -7,7 +7,7 @@ export default function BoxColor({ colorName }) {
 
   return (
     <div className={styles.div} style={bgColor}>
-      <p>{colorName.length === 0 ? (colorName = "Empty Value") : colorName}</p>
+      <p>{colorName ? colorName : "Empty Value"}</p>
     </div>
   );
 }
